@@ -40,3 +40,20 @@ python main.py \
     --qps-critic 30 \
     --max-retry-times 5
 ```
+
+## Reference
+To cite this work please use:
+```
+@misc{huang2024orcaenhancingroleplayingabilities,
+      title={Orca: Enhancing Role-Playing Abilities of Large Language Models by Integrating Personality Traits}, 
+      author={Yuxuan Huang},
+      year={2024},
+      eprint={2411.10006},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2411.10006}, 
+}
+```
+
+## License
+OrcaBench is released under [Apache-2.0 license](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](https://github.com/Airoura/OrcaBench/blob/main/LICENSE) for details.
