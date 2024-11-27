@@ -1,0 +1,7 @@
+numpy
+tqdm
+openai
+zhipuai
+nltk
+rouge
+tritonclient

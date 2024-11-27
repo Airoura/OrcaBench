@@ -1,0 +1,20 @@
+python main.py \
+    --platform openai \
+    --base-url http://172.16.64.187:8002/v1 \
+    --api-key - \
+    --model pcit_eighth \
+    --max-tokens 1024 \
+    --temperature 0.6 \
+    --top-p 0.7 \
+    --platform-critic openai \
+    --base-url-critic  http://172.16.64.188:8000/v1 \
+    --api-key-critic - \
+    --model-critic llama3.1-70b \
+    --max-tokens-critic 1024 \
+    --temperature-critic 0.01 \
+    --top-p-critic 0.7 \
+    --convs-per-chunk 10 \
+    --qps 20 \
+    --qps-critic 20 \
+    --max-retry-times 5 \
+    --ablation without_psychology_media

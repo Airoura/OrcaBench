@@ -1,0 +1,20 @@
+python main.py \
+    --platform openai \
+    --base-url https://api.fireworks.ai/inference/v1 \
+    --api-key NkUNSHbuSYFvsBZYxq1WhQTIWibG7Q3foDAQHRnYqyALHDRA \
+    --model accounts/fireworks/models/llama-v3p1-8b-instruct \
+    --max-tokens 1024 \
+    --temperature 0.6 \
+    --top-p 0.7 \
+    --platform-critic openai \
+    --base-url-critic  https://api.deepseek.com/v1 \
+    --api-key-critic sk-1de611de30cb4712ac4b0f4b633a3321 \
+    --model-critic deepseek-chat \
+    --max-tokens-critic 1024 \
+    --temperature-critic 0.01 \
+    --top-p-critic 0.7 \
+    --convs-per-chunk 10 \
+    --qps 20 \
+    --qps-critic 20 \
+    --max-retry-times 5 \
+    --ablation deepseek_judger

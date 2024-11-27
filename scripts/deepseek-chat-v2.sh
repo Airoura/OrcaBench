@@ -1,0 +1,19 @@
+python main.py \
+    --platform zhipuai \
+    --base-url https://api.deepseek.com/v1 \
+    --api-key sk-1de611de30cb4712ac4b0f4b633a3321 \
+    --model deepseek-chat \
+    --max-tokens 1024 \
+    --temperature 0.6 \
+    --top-p 0.7 \
+    --platform-critic openai \
+    --base-url-critic http://172.16.64.188:8000/v1 \
+    --api-key-critic - \
+    --model-critic llama3.1-70b \
+    --max-tokens-critic 1024 \
+    --temperature-critic 0.01 \
+    --top-p-critic 0.7 \
+    --convs-per-chunk 10 \
+    --qps 20 \
+    --qps-critic 20 \
+    --max-retry-times 5

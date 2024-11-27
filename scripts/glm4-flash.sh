@@ -1,0 +1,19 @@
+python main.py \
+    --platform zhipuai \
+    --base-url https://open.bigmodel.cn/api/paas/v4 \
+    --api-key 120985c00e389dac93ae62522ab5ae7a.lX6mrF4YEcSw4fmq \
+    --model glm-4-flash \
+    --max-tokens 1024 \
+    --temperature 0.6 \
+    --top-p 0.7 \
+    --platform-critic openai \
+    --base-url-critic http://172.16.64.188:8000/v1 \
+    --api-key-critic - \
+    --model-critic llama3.1-70b \
+    --max-tokens-critic 1024 \
+    --temperature-critic 0.01 \
+    --top-p-critic 0.7 \
+    --convs-per-chunk 10 \
+    --qps 20 \
+    --qps-critic 20 \
+    --max-retry-times 5
